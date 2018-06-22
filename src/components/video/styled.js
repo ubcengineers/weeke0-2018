@@ -8,6 +8,7 @@ export const StyledWrapper = styled.default.div`
     grid-template-columns: 1fr minmax(auto, 760px) 1fr;
     background: #2F2F6F;
     padding: 64px 0;
+    margin-top: -1px;
 `;
 
 export const StyledContent = styled.default.div`

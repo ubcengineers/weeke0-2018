@@ -14,6 +14,7 @@ export const StyledContent = styled.default.div`
     display: flex;
     flex-flow: column wrap;
     padding: 0 32px;
+    margin-top: -1px;
 `;
 
 export const StyledFeature = styled.default.div`

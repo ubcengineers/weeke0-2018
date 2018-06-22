@@ -1,10 +1,12 @@
 import * as styled from 'styled-components';
 
-export const StyledWrapper = styled.default.div`
+export const StyledWrapper = styled.default.div
+`
     display: grid;
     grid-template-columns: 1fr minmax(auto, 760px) 1fr;
     background: #FFFFFF;
     padding: 64px 0;
+    margin-top: -1px;
 `;
 
 export const StyledContent = styled.default.div`
