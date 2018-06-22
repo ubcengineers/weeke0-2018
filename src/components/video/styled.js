@@ -38,6 +38,8 @@ export const StyledVideo = styled.default.div`
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
+    box-shadow: rgba(0,0,0,0.2) 0 0 8px;
+    z-index: 1;
 
     & iframe {
         position: absolute;

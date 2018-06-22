@@ -20,7 +20,7 @@ class EndForm extends React.Component {
                     </p>
                     <form name="reach-out" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="form-name" value="reach-out" />
-                    <StyledTextInput placeholder="Email" type="email" name="email"/>
+                    <StyledTextInput placeholder="Email" type="email" name="email" required={true}/>
                     <StyledSubmit type="submit">Submit</StyledSubmit>
                     </form>
                     <p>

@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import './index.css'
-import bg from '../assets/bg.jpg';
 
 const Layout = ({ children, data }) => (
-  <div>
+  <ParallaxProvider>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -15,7 +15,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     {children()}
-  </div>
+  </ParallaxProvider>
 )
 
 Layout.propTypes = {

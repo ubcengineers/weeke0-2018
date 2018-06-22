@@ -18,7 +18,7 @@ const appear = styled.keyframes`
 export const StyledWrapper = styled.default.div`
     position: relative;
     display: grid;
-    grid-template-rows: 20% 1fr 20%;
+    grid-template-rows: 300px 1fr 200px;
     width: 100%;
     height: 100vh;
     min-height: 400px;
@@ -44,7 +44,7 @@ export const StyledFooter = StyledRow.extend`
 `
 
 export const StyledLogo = styled.default.img`
-    width: 20%;
+    width: 30%;
     min-width: 250px;
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.2));
     filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.2));
@@ -52,9 +52,9 @@ export const StyledLogo = styled.default.img`
 `;
 
 export const StyledBackground = styled.default.div`
-    position: fixed;
-    width: 100%
-    height: 100%;
+    position: absolute;
+    width: 100vw
+    height: 100vh;
     background: url(${bg}) no-repeat;
     background-size: cover;
     background-position: center center;
