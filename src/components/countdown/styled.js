@@ -5,24 +5,22 @@ export const StyledWrapper = styled.default.div`
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    min-width: 256px;
-    height: 92px;
+    padding: 16px 32px;
     border-radius: 16px;
-    box-shadow: rgba(0,0,0,0.2) 0 0 4px;
+    box-shadow: rgba(0,0,0,0.2) 0 0 8px;
     background: #FFFFFF;
 `;
 
 export const StyledRow = styled.default.div`
     margin: 8px;
     color: #2F2F6F;
-    flex-basis: 0;
+    width: 3em;
     font-family: "Fjalla One", sans-serif;
 `
 
 export const StyledDigit = styled.default.div`
     font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #2F2F6F;
     margin-bottom: 4px;
     text-align: center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledWrapper, StyledRow, StyledLogo, StyledEUSLogo, StyledFunky, StyledRowAppearDelayed } from './styled';
+import { StyledWrapper, StyledRow, StyledLogo, StyledHeader, StyledBackground, StyledFooter } from './styled';
 import Countdown from '../countdown';
 
 import logo from '../../assets/weeke0-logo.svg';
@@ -8,22 +8,22 @@ class Hero extends React.Component {
 
     constructor() {
         super();
-        this.titleRef = React.createRef();
     }
 
     render = () => (
+        <React.Fragment>
+        <StyledBackground />
         <StyledWrapper>
-            <StyledFunky />
-            <StyledRowAppearDelayed>
-                <StyledEUSLogo />
-            </StyledRowAppearDelayed>
-            <StyledRow>
+            <StyledHeader>
                 <StyledLogo src={logo} />
+            </StyledHeader>
+            <StyledRow>
             </StyledRow>
-            <StyledRowAppearDelayed>
-                    <Countdown endTime={1536073200000}/>
-            </StyledRowAppearDelayed>
+            <StyledFooter>
+                <Countdown endTime={1536073200000}/>
+            </StyledFooter>
         </StyledWrapper>
+        </React.Fragment>
     )
 }
 

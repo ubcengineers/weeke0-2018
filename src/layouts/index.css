@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Just+Another+Hand|Nunito');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Just+Another+Hand|Nunito|Coustard:900');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;

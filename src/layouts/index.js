@@ -6,14 +6,7 @@ import './index.css'
 import bg from '../assets/bg.jpg';
 
 const Layout = ({ children, data }) => (
-  <div style={{
-    display: 'grid',
-    gridTemplateColumns: '1fr minmax(max-content, 1024px) 1fr',
-    background: `url(${bg}) no-repeat`,
-    backgroundPosition: 'center center',
-    backgroundSize: 'cover',
-  }}>
-    <div/>
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -21,10 +14,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div>
     {children()}
-    </div>
-    <div/>
   </div>
 )
 
