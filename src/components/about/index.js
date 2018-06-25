@@ -21,7 +21,7 @@ class About extends React.Component {
                         Also don’t forget to come to BBQs and pancake breakfasts to meet faculty, student teams and clubs! Make friends, do something crazy, and have a lot of fun.
                     </p>
                     <p>
-                        <small>* after E-Week of course.</small>
+                        <small>* after <a href="https://www.facebook.com/UBCEngineers/videos/762594977229597/">E-Week</a> of course.</small>
                     </p>
                 </StyledMain>
             </StyledContent>
