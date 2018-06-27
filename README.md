@@ -1,6 +1,7 @@
 # Week E^0 2018 Website
 
-This is the repository of the Week E^0 2018 website. This website provides information Week E^0 and E-Retreat for incoming students and potential volunteers. The website uses the static website generator [Gatsby.js](https://www.gatsbyjs.org/), which takes of React to render the various webpage components.
+
+This is the repository of the Week E^0 2018 website. This website provides information Week E^0 and E-Retreat for incoming students and potential volunteers. The website uses the static website generator [Gatsby.js](https://www.gatsbyjs.org/), which takes advantage of React to render the various webpage components.
 
 [View live website](https://weeke0.ubcengineers.ca)
 
@@ -30,7 +31,7 @@ You can then start a development server by running ```npm run develop```
 
 ### Deployment
 
-I recommend reading Gatsby's great documentation on this matter as they explain it better than I ever could.
+I recommend reading Gatsby's [great documentation](https://www.gatsbyjs.org/docs/deploy-gatsby/) on this matter as they explain it better than I ever could.
 
 ## Built with
 
