@@ -1,64 +1,45 @@
 import * as styled from 'styled-components';
 
-import funky1 from '../../assets/funky-bg-1.svg';
 import funky2 from '../../assets/funky-bg-2.svg';
-import bg from '../../assets/bg.jpg';
-
-const appear = styled.keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
 
 export const StyledWrapper = styled.default.div`
     position: relative;
     display: grid;
-    grid-template-rows: 300px 1fr 200px;
-    width: 100%;
-    height: 100vh;
-    min-height: 400px;
+    grid-template-columns: 1fr minmax(auto, 960px) 1fr;
+    background: #2F2F6F;
+    padding: 64px 0;
+    margin-top: -1px;
 `;
 
-export const StyledRow = styled.default.div`
+export const StyledContent = styled.default.div`
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+    flex-flow: column wrap;
+    padding: 64px 32px;
 `;
 
-export const StyledHeader = StyledRow.extend`
-    background: url(${funky1}) no-repeat;
-    background-size: 100% 100%;
-`
-
-export const StyledFooter = StyledRow.extend`
+export const StyledFooter = styled.default.div`
+    position: absolute;
+    width: 100%
+    height: 300px;
+    bottom: 0;
     background: url(${funky2}) no-repeat;
     background-size: 100% 100%;
     background-position: center bottom;
 `
 
-export const StyledLogo = styled.default.img`
-    width: 30%;
-    min-width: 250px;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.2));
-    filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.2));
-    animation: ${appear} 1s ease-out;
-`;
+export const StyledVideo = styled.default.div`
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    box-shadow: rgba(0,0,0,0.2) 0 0 8px;
 
-export const StyledBackground = styled.default.div`
-    position: absolute;
-    width: 100vw
-    height: 100vh;
-    background: url(${bg}) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-`;
-
-
+    & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+`
