@@ -12,7 +12,7 @@ export const StyledWrapper = styled.default.div`
 export const StyledContent = styled.default.div`
     display: flex;
     flex-flow: column wrap;
-    padding: 64px 32px;
+    padding: 92px 32px 64px 32px;
 `;
 
 export const StyledFooter = styled.default.div`
