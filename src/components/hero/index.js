@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyledWrapper, StyledContent, StyledVideo, StyledFooter } from './styled';
 import { Parallax } from 'react-scroll-parallax';
+import Funky from '../funky';
+
+import funky2 from '../../assets/funky-bg-2.svg';
 
 class Hero extends React.Component {
 
@@ -10,7 +13,9 @@ class Hero extends React.Component {
 
     render = () => (
         <StyledWrapper>
-            <StyledFooter />
+            <StyledFooter>
+                <Funky funky={funky2} background="transparent" />
+            </StyledFooter>
             <div />
             <StyledContent>
                 <Parallax

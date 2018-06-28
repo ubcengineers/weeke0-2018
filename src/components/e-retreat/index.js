@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledWrapper, StyledContent, StyledFeature, StyledMain, StyledFooter } from './styled';
+import { StyledWrapper, StyledContent, StyledFeature, StyledMain } from './styled';
 
 class ERetreat extends React.Component {
 
@@ -29,7 +29,6 @@ class ERetreat extends React.Component {
                 </StyledMain>
             </StyledContent>
             <div />
-            <StyledFooter />
         </StyledWrapper>
     )
 }

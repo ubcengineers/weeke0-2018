@@ -1,7 +1,5 @@
 import * as styled from 'styled-components';
 
-import funky2 from '../../assets/funky-bg-2.svg';
-
 export const StyledWrapper = styled.default.div`
     position: relative;
     display: grid;
@@ -19,12 +17,7 @@ export const StyledContent = styled.default.div`
 
 export const StyledFooter = styled.default.div`
     position: absolute;
-    width: 100%
-    height: 300px;
     bottom: 0;
-    background: url(${funky2}) no-repeat;
-    background-size: 100% 100%;
-    background-position: center bottom;
 `
 
 export const StyledVideo = styled.default.div`
