@@ -1,0 +1,17 @@
+.white {
+    background: white;
+    color: black;
+}
+
+.white h1, .white h2, .white h3 {
+    color: #E51E25;
+}
+
+.blue {
+    background: #2F2F6F;
+    color: white;
+}
+
+.blue h1, .blue h2, .blue h3 {
+    color: white;
+}
