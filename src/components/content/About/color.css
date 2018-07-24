@@ -8,8 +8,8 @@
 }
 
 .blue {
-    background: #2F2F6F;
     color: white;
+    background: radial-gradient(#2f2f6f 40%, transparent 100%);
 }
 
 .blue h1, .blue h2, .blue h3 {

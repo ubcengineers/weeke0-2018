@@ -8,7 +8,8 @@ export default (props: IProps) => {
     return (
         <div style={{
             background: `url(${props.border}) no-repeat`,
-            height: '256px',
+            backgroundSize: '100% 100%',
+            height: '10vw',
             width: '100%',
         }} />
     )

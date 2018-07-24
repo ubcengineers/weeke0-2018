@@ -1,8 +1,14 @@
 import * as React from 'react';
-import { StyledWrapper } from './styled';
+import { StyledLogo, StyledWrapper } from './styled';
 
-export default () => {
+interface IProps {
+    logo: string;
+}
+
+export default (props: IProps) => {
     return (
-        <StyledWrapper />
+        <StyledWrapper>
+            <StyledLogo src={props.logo} />
+        </StyledWrapper>
     );
 }

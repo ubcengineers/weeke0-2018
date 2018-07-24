@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledWrapper = styled.div`
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 820px) 1fr;
+    grid-template-columns: 1fr minmax(auto, 960px) 1fr;
     padding: 64px 0px;
 `;
 

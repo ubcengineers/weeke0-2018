@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { StyledLogo, StyledNavItem, StyledWrapper } from './styled';
+import { StyledNavItem, StyledWrapper } from './styled';
 
 interface IProps {
-    logo: string;
+    left: string;
+    right: string;
     navItems: Array<{
         title: string;
         link: string;
@@ -12,24 +13,21 @@ interface IProps {
 export default (props: IProps) => {
     return (
         <StyledWrapper>
+            <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle'}}>
+                {props.left}
+            </StyledNavItem>
+            <div style={{lineHeight: '48px', verticalAlign: 'middle', textAlign: 'center'}}>
             {props.navItems.map((element, index) => {
-                if(index === props.navItems.length / 2) {
-                    return (
-                        <>
-                        <StyledLogo src={props.logo} />
-                        <StyledNavItem key={element.title} href={element.link}>
-                            {element.title}
-                        </StyledNavItem>
-                        </>
-                    )
-                } else {
-                    return (
-                        <StyledNavItem key={element.title} href={element.link}>
-                            {element.title}
-                        </StyledNavItem>
-                    );
-                }
+                return (
+                    <StyledNavItem key={element.title} href={element.link}>
+                        {element.title}
+                    </StyledNavItem>
+                );
             })}
+            </div>
+            <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle', textAlign: 'right'}}>
+                {props.right}
+            </StyledNavItem>
         </StyledWrapper>
     )
 }

@@ -10,12 +10,16 @@ import logo from './assets/logo.svg';
 
 import AboutContent from './markdown/about.md';
 import ERetreatContent from './markdown/e-retreat.md';
+import ScheduleContent from './markdown/schedule.md';
 
 export default class BlogPost extends React.PureComponent {
   public render() {
     return (
       <>
-      <Nav logo={logo} navItems={[
+      <Nav 
+        left='UBC Vancouver Campus'
+        right='September 2018'
+        navItems={[
         {
           link: '#About',
           title: 'About',
@@ -33,7 +37,7 @@ export default class BlogPost extends React.PureComponent {
           title: 'More',
         },
       ]}/>
-      <Hero />
+      <Hero logo={logo} />
       <Border border={border1} />
       <About color='white' border={border1}>
         <AboutContent />
@@ -41,6 +45,10 @@ export default class BlogPost extends React.PureComponent {
       <Border border={border2} />
       <About color='blue'>
         <ERetreatContent />
+      </About>
+      <Border border={border1} />
+      <About color='white' border={border1}>
+        <ScheduleContent />
       </About>
       </>
     );
