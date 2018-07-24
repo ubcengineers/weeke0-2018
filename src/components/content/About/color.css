@@ -15,3 +15,12 @@
 .blue h1, .blue h2, .blue h3 {
     color: white;
 }
+
+.red {
+    color: white;
+    background: #E51E25;
+}
+
+.red h1, .blue h2, .blue h3 {
+    color: white;
+}

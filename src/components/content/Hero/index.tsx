@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import { StyledLogo, StyledWrapper } from './styled';
 
 interface IProps {
@@ -7,8 +8,10 @@ interface IProps {
 
 export default (props: IProps) => {
     return (
-        <StyledWrapper>
-            <StyledLogo src={props.logo} />
-        </StyledWrapper>
+        <ScrollableAnchor id='home'>
+            <StyledWrapper>
+                <StyledLogo src={props.logo} />
+            </StyledWrapper>
+        </ScrollableAnchor>
     );
 }
