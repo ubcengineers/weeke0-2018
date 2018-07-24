@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Scrollchor from 'react-scrollchor';
+
 import { 
     StyledClose, 
     StyledNavItem, 
@@ -28,16 +30,10 @@ export default class Nav extends React.Component<IProps> {
 
     public componentDidMount() {
         window.addEventListener('resize', this.handleResize);
-        window.addEventListener('hashchange', this.handleHashChange);
-      }
+    }
     
     public componentWillUnmount() {
         window.removeEventListener('resize', this.handleResize);
-        window.removeEventListener('hashchange', this.handleHashChange);
-    }
-
-    public handleHashChange = () => {
-        this.setState({hash: location.hash});
     }
 
     public handleResize = () => {
@@ -63,14 +59,13 @@ export default class Nav extends React.Component<IProps> {
                     <StyledNavOverlay>
                         {this.props.navItems.map((element) => {
                             return (
+                                <Scrollchor key={element.title} to={element.link} target='scroll'>
                                 <StyledNavOverlayItem
-                                    key={element.title}
-                                    style={{opacity: this.state.hash === element.link ? 1 : 0.8}}
-                                    href={element.link}
                                     onClick={this.handleClose}
                                 >
-                                    {element.title}
+                                        {element.title}
                                 </StyledNavOverlayItem>
+                                </Scrollchor>
                             );
                         })}
                         <StyledClose className='fas fa-times' onClick={this.handleClose}/>
@@ -88,13 +83,13 @@ export default class Nav extends React.Component<IProps> {
                     <div style={{lineHeight: '48px', verticalAlign: 'middle', textAlign: 'center'}}>
                     {this.props.navItems.map((element) => {
                         return (
-                            <StyledNavItem
-                                key={element.title}
-                                href={element.link}
-                                style={{opacity: this.state.hash === element.link ? 1 : 0.8}}
-                            >
-                                {element.title}
-                            </StyledNavItem>
+                            
+                            <Scrollchor key={element.title} to={element.link} target='scroll'>
+                                <StyledNavItem
+                                >
+                                    {element.title}
+                                </StyledNavItem>
+                            </Scrollchor>
                         );
                     })}
                     </div>

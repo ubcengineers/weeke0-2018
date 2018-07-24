@@ -38,11 +38,12 @@ export const StyledNavOverlay = styled.div`
 `
 
 export const StyledNavOverlayItem = styled.a`
+    display: inline-block;
     margin: 16px 16px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
     opacity: 0.6;
     transition: all .2s;
 
@@ -61,6 +62,7 @@ export const StyledOpen = styled.i`
     vertical-align: middle;
     color: white;
     opacity: 0.6;
+    cursor: pointer;
     transition: all .2s;
 
     &:hover {
@@ -76,6 +78,7 @@ export const StyledClose = styled.i`
     height: 16px;
     color: white;
     opacity: 0.6;
+    cursor: pointer;
     transition: all .2s;
 
     &:hover {

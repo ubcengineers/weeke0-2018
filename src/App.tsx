@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { configureAnchors } from 'react-scrollable-anchor';
+import Scrollbars from 'react-custom-scrollbars';
+
 import About from './components/content/About';
 import Border from './components/content/Border';
 import Hero from './components/content/Hero';
@@ -15,24 +16,14 @@ import AboutContent from './markdown/about.md';
 import ERetreatContent from './markdown/e-retreat.md';
 import ScheduleContent from './markdown/schedule.md';
 
-configureAnchors({offset: -64, scrollDuration: 400});
-
 export default class App extends React.Component {
 
   public state = {
     top: true,
   }
 
-  public componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  public componentWillUnmount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  public handleScroll = (event: any) => {
-    const scrollTop = window.scrollY;
+  public handleScroll = (value: any) => {
+    const { scrollTop } = value.srcElement;
 
     this.setState({
       top: scrollTop === 0,
@@ -41,7 +32,12 @@ export default class App extends React.Component {
 
   public render() {
     return (
-      <>
+      <Scrollbars
+        onScroll={this.handleScroll}
+        style={{height: '100vh', width: '100vw'}}
+        renderView={(props: any) => <div {...props} id="scroll"/>}
+      >
+      <div className="fadein">
       <Nav 
         full={this.state.top}
         left='UBC Vancouver Campus'
@@ -77,7 +73,8 @@ export default class App extends React.Component {
       <About anchor='more' color='red' border={border3}>
         <Contact />
       </About>
-      </>
+      </div>
+      </Scrollbars>
     );
   }
 }

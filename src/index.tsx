@@ -1,11 +1,23 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+import * as Loadable from 'react-loadable';
+
+const LoadableApp = Loadable({
+  loader: () => import('./App'),
+  loading() {
+    return (
+      <div className="spinner-wrapper">
+            <div className="spinner">
+              <div className="bounce1" />
+              <div className="bounce2" />
+              <div className="bounce3" />
+            </div>
+      </div>
+    )
+  }
+});
 
 ReactDOM.render(
-  <App />,
+  <LoadableApp />,
   document.getElementById('root') as HTMLElement
 );
-registerServiceWorker();
