@@ -4,7 +4,6 @@ import { StyledContent, StyledWrapper } from './styled';
 import './color.css';
 
 interface IProps {
-    anchor: string;
     color: 'white' | 'blue' | 'red';
     children: React.ReactNode;
     border?: string;
@@ -12,7 +11,7 @@ interface IProps {
 
 export default (props: IProps) => {
     return (
-        <StyledWrapper id={props.anchor} className={props.color}>
+        <StyledWrapper className={props.color}>
             <StyledContent>
                     {props.children}
             </StyledContent>

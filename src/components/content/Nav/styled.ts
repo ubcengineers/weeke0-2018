@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
@@ -7,9 +8,10 @@ export const StyledWrapper = styled.div`
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 64px;
+    z-index: 100;
 `
 
-export const StyledNavItem = styled.a`
+export const StyledNavItem = styled(NavLink)`
     display: inline-block;
     margin: 8px 16px;
     font-family: 'Fjalla One', sans-serif;
@@ -35,15 +37,16 @@ export const StyledNavOverlay = styled.div`
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 `
 
-export const StyledNavOverlayItem = styled.a`
+export const StyledNavOverlayItem = styled(NavLink)`
     display: inline-block;
     margin: 16px 16px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     color: white;
-    text-decoration: none !important;
+    text-decoration: none;
     opacity: 0.6;
     transition: all .2s;
 

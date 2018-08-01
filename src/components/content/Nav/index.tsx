@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Scrollchor from 'react-scrollchor';
+import { withRouter } from 'react-router';
 
 import { 
     StyledClose, 
@@ -15,12 +15,14 @@ interface IProps {
     left: string;
     right: string;
     navItems: Array<{
-        title: string;
+        title: JSX.Element | string;
         link: string;
     }>;
+    history: History
+    location: Location;
 }
 
-export default class Nav extends React.Component<IProps> {
+class Nav extends React.Component<IProps> {
 
     public state = {
         hash: location.hash,
@@ -52,20 +54,24 @@ export default class Nav extends React.Component<IProps> {
         if(this.state.width < 760) {
             return (
                 <>
-                <StyledWrapper style={{background: this.props.full ? 'transparent' : '#2F2F6F'}}>
+                <StyledWrapper style={{background: this.props.full || this.props.location.pathname !== '/' ? '#2F2F6F' : 'transparent'}}>
                     <StyledOpen className='fas fa-bars' onClick={this.handleOpen}/>
                 </StyledWrapper>
                 {this.state.open ?
                     <StyledNavOverlay>
                         {this.props.navItems.map((element) => {
                             return (
-                                <Scrollchor key={element.title} to={element.link} target='scroll'>
-                                <StyledNavOverlayItem
-                                    onClick={this.handleClose}
-                                >
+                                    <StyledNavOverlayItem
+                                        key={element.title.toString()}
+                                        to={element.link}
+                                        onClick={this.handleClose}
+                                        activeStyle={{
+                                            opacity: 1,
+                                        }}
+                                        exact={true}
+                                    >
                                         {element.title}
-                                </StyledNavOverlayItem>
-                                </Scrollchor>
+                                    </StyledNavOverlayItem>
                             );
                         })}
                         <StyledClose className='fas fa-times' onClick={this.handleClose}/>
@@ -76,24 +82,27 @@ export default class Nav extends React.Component<IProps> {
             )
         } else {
             return (
-                <StyledWrapper style={{background: this.props.full ? 'transparent' : '#2F2F6F' }}>
-                    <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle'}}>
+                <StyledWrapper style={{background: this.props.full || this.props.location.pathname !== '/' ? '#2F2F6F' : 'transparent'}}>
+                    <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle'}} to='#'>
                         {this.props.left}
                     </StyledNavItem>
                     <div style={{lineHeight: '48px', verticalAlign: 'middle', textAlign: 'center'}}>
                     {this.props.navItems.map((element) => {
                         return (
-                            
-                            <Scrollchor key={element.title} to={element.link} target='scroll'>
-                                <StyledNavItem
-                                >
-                                    {element.title}
-                                </StyledNavItem>
-                            </Scrollchor>
+                            <StyledNavItem
+                                key={element.title.toString()}
+                                to={element.link}
+                                activeStyle={{
+                                    opacity: 1,
+                                }}
+                                exact={true}
+                            >
+                                {element.title}
+                            </StyledNavItem>
                         );
                     })}
                     </div>
-                    <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle', textAlign: 'right'}}>
+                    <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle', textAlign: 'right'}} to='#'>
                         {this.props.right}
                     </StyledNavItem>
                 </StyledWrapper>
@@ -101,3 +110,5 @@ export default class Nav extends React.Component<IProps> {
         }
     }
 }
+
+export default withRouter((props: any) => <Nav {...props} />);
