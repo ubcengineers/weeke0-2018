@@ -54,7 +54,7 @@ class Nav extends React.Component<IProps> {
         if(this.state.width < 760) {
             return (
                 <>
-                <StyledWrapper style={{background: this.props.full || this.props.location.pathname !== '/' ? '#2F2F6F' : 'transparent'}}>
+                <StyledWrapper style={{background: this.props.full ? '#2F2F6F' : 'transparent'}}>
                     <StyledOpen className='fas fa-bars' onClick={this.handleOpen}/>
                 </StyledWrapper>
                 {this.state.open ?
@@ -82,7 +82,7 @@ class Nav extends React.Component<IProps> {
             )
         } else {
             return (
-                <StyledWrapper style={{background: this.props.full || this.props.location.pathname !== '/' ? '#2F2F6F' : 'transparent'}}>
+                <StyledWrapper style={{background: this.props.full ? '#2F2F6F' : 'transparent'}}>
                     <StyledNavItem style={{lineHeight: '48px', verticalAlign: 'middle'}} to='#'>
                         {this.props.left}
                     </StyledNavItem>
