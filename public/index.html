@@ -28,7 +28,7 @@
 
       p {
         font-size: 1.1em;
-        line-height: 1.7;
+        line-height: 2;
       }
 
       h1, h2 , h3, h4 {
@@ -38,6 +38,16 @@
 
       h1 {
         font-size: 4em;
+      }
+
+      @media (max-width: 760px) {
+        body {
+          font-size: 90%;
+        }
+
+        h1 {
+          font-size: 3em;
+        }
       }
 
       .fadein {

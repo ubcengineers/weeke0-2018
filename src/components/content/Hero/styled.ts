@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const StyledWrapper = styled.div`
     width: 100%;
     height: 50vw;
-    max-height: 50vh;
-    padding-top: 64px;
+    max-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
