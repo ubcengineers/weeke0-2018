@@ -1,5 +1,13 @@
 import * as React from 'react';
-import { StyledDay, StyledEvent, StyledMuted, StyledSubtitle, StyledTitle, StyledWrapper } from './styled';
+import { StyledDay,
+    StyledEvent,
+    StyledModal,
+    StyledModalBackground,
+    StyledMuted,
+    StyledSubtitle,
+    StyledTitle,
+    StyledWrapper
+} from './styled';
 
 interface IProps {
     title: string;
@@ -14,40 +22,64 @@ interface IProps {
     }>;
 }
 
-export default (props: IProps) => {
-    return (
-        <StyledWrapper style={{gridTemplateColumns: `repeat(${props.days.length}, 1fr)`}}>
-            <StyledDay style={{fontSize: '1.2em', gridRowStart: 1, gridColumnStart: 1, gridColumnEnd: props.days.length + 1}}>
-                {props.title}
-            </StyledDay>
-            {props.days.map((element, index) => (
-                <StyledDay key={element.toString()} style={{gridRowStart: 2, gridColumnStart: index + 1}}>
-                    {element}
-                </StyledDay>
-            ))}
-            {props.events.map((element) => (
-                <>
-                {!element.muted ? 
-                    <StyledEvent key={element.title} style={{gridRowStart: element.start * 2 - 13, gridRowEnd: element.end * 2 - 13, gridColumnStart: element.day}}>
-                        <StyledSubtitle>
-                            {element.subtitle}
-                        </StyledSubtitle>
-                        <StyledTitle>
-                            {element.title}
-                        </StyledTitle>
-                    </StyledEvent>
+export default class Calendar extends React.Component<IProps> {
+
+    public state = {
+        active: false,
+        activeIndex: 0,
+    }
+
+    public render () {
+        return (
+            <>
+            <StyledWrapper style={{gridTemplateColumns: `repeat(${this.props.days.length}, 1fr)`}}>
+                {this.state.active ?
+                    <StyledModalBackground className='fadein'>
+                        <StyledModal>
+                            Hello
+                        </StyledModal>
+                    </StyledModalBackground>
                     :
-                    <StyledMuted key={element.title} style={{gridRowStart: element.start * 2 - 13, gridRowEnd: element.end * 2 - 13, gridColumnStart: element.day}}>
-                        <StyledSubtitle>
-                            {element.subtitle}
-                        </StyledSubtitle>
-                        <StyledTitle>
-                            {element.title}
-                        </StyledTitle>
-                    </StyledMuted>
+                    null
                 }
-                </>
-            ))}
-        </StyledWrapper>
-    )
+                {this.props.days.map((element, index) => (
+                    <StyledDay key={element.toString()} style={{gridRowStart: 1, gridColumnStart: index + 1}}>
+                        {element}
+                    </StyledDay>
+                ))}
+                {this.props.events.map((element, index) => (
+                    <>
+                    {!element.muted ? 
+                        <StyledEvent 
+                            key={element.title} 
+                            style={{gridRowStart: element.start * 2 - 14, gridRowEnd: element.end * 2 - 14, gridColumnStart: element.day}}
+                            onClick={this.handleClick(index)}
+                        >
+                            <StyledSubtitle>
+                                {element.subtitle}
+                            </StyledSubtitle>
+                            <StyledTitle>
+                                {element.title}
+                            </StyledTitle>
+                        </StyledEvent>
+                        :
+                        <StyledMuted key={element.title} style={{gridRowStart: element.start * 2 - 14, gridRowEnd: element.end * 2 - 14, gridColumnStart: element.day}}>
+                            <StyledSubtitle>
+                                {element.subtitle}
+                            </StyledSubtitle>
+                            <StyledTitle>
+                                {element.title}
+                            </StyledTitle>
+                        </StyledMuted>
+                    }
+                    </>
+                ))}
+            </StyledWrapper>
+            </>
+        )
+    }
+
+    public handleClick = (index: number) => () => {
+        this.setState({active: true, activeIndex: index});
+    }
 }

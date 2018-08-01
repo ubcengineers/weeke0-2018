@@ -2,16 +2,19 @@ import * as React from 'react';
 
 import About from '../components/content/About';
 import Border from '../components/content/Border';
+import ButtonRow from '../components/content/ButtonRow';
 import Calendar from '../components/content/Calendar';
 import Contact from '../components/form/Contact';
 
 import border3 from '../assets/border3.svg';
 
+import ScheduleContent from '../markdown/schedule.md';
+
 export default () => {
   return (
-    <div className="fadein">
+    <div className="fadein" style={{marginTop: '-64px'}}>
     <About color='blue'>
-      <h1>Schedule</h1>
+      <ScheduleContent />
       <Calendar 
         title=''
         days={[
@@ -62,15 +65,39 @@ export default () => {
           {
             day: 3,
             end: 8,
-            start: 10,
-            subtitle: '8am - 10am',
+            start: 9,
+            subtitle: '8am - 9am',
             title: 'AOESPD Breakfast',
           },
           {
             day: 3,
+            end: 10,
+            muted: true,
+            start: 9,
+            subtitle: '9am - 10am',
+            title: 'PHYS 157',
+          },
+          {
+            day: 3,
             end: 12,
+            muted: true,
+            start: 11,
+            subtitle: '11am - 12pm',
+            title: 'APSC 100',
+          },
+          {
+            day: 3,
+            end: 13,
+            muted: true,
+            start: 12,
+            subtitle: '12pm - 1pm',
+            title: 'MATH 100',
+          },
+          {
+            day: 3,
+            end: 13,
             start: 14,
-            subtitle: '12pm - 2pm',
+            subtitle: '1pm - 2pm',
             title: 'Chariot Racing',
           },
           {
@@ -131,6 +158,13 @@ export default () => {
           }
         ]}
       />
+      <ButtonRow buttons={[
+        {
+          link: 'export',
+          logo: 'fas fa-download',
+          title: 'Export to your calendar',
+        }
+      ]}/>
     </About>
     <Border border={border3} />
     <About color='red' border={border3}>

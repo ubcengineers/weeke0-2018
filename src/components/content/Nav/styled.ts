@@ -2,13 +2,12 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
-    position: fixed;
+    position: sticky;
     width: 100%;
     background: #2F2F6F;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 64px;
-    z-index: 100;
 `
 
 export const StyledNavItem = styled(NavLink)`

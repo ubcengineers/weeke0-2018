@@ -3,10 +3,33 @@ import styled from 'styled-components';
 export const StyledWrapper = styled.div`
     width: 100%;
     display: grid;
-    grid-template-rows: 48px 48px repeat(28, minmax(8px,min-content));
+    grid-template-rows: 48px repeat(28, minmax(8px,min-content));
     grid-gap: 4px;
     font-family: 'Fjalla One', sans-serif;
     margin-top: 64px;
+`
+
+export const StyledModal = styled.div`
+    width: 30vw;
+    min-width: 400px;
+    height: 80vh;
+    background: white;
+    border-radius: 16px;
+    box-shadow: rgba(0,0,0,0.4) 0 0 16px;
+    z-index: 1000;
+`
+
+export const StyledModalBackground = styled.div`
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
 `
 
 export const StyledDay = styled.div`
@@ -24,6 +47,7 @@ export const StyledEvent = styled.div`
     background: white;
     padding: 8px 2px;
     border-radius: 4px;
+    color: inherit;
     box-shadow: rgba(0,0,0,0.4) 0 0 8px;
     color: #E51E25;
     text-align: center;

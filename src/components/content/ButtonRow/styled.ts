@@ -6,7 +6,7 @@ export const StyledWrapper = styled.div`
     display: grid;
     margin-top: 64px;
     grid-gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 400px));
     justify-content: center;
 `;
 

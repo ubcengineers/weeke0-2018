@@ -66,7 +66,7 @@ export default class App extends React.Component {
   private Main = () => (
     <Scrollbars
           onScroll={this.handleScroll}
-          style={{height: '100vh', width: '100vw'}}
+          style={{height: 'calc(100vh - 64px)', width: '100vw'}}
     >
       <MainLoadable />
     </Scrollbars>
@@ -75,7 +75,7 @@ export default class App extends React.Component {
   private Schedule = () => (
     <Scrollbars
           onScroll={this.handleScroll}
-          style={{height: '100vh', width: '100vw'}}
+          style={{height: 'calc(100vh - 64px)', width: '100vw'}}
     >
       <ScheduleLoadable />
     </Scrollbars>
