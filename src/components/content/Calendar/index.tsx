@@ -53,7 +53,6 @@ export default class Calendar extends React.Component<IProps> {
                         <StyledEvent 
                             key={element.title} 
                             style={{gridRowStart: element.start * 2 - 14, gridRowEnd: element.end * 2 - 14, gridColumnStart: element.day}}
-                            onClick={this.handleClick(index)}
                         >
                             <StyledSubtitle>
                                 {element.subtitle}
