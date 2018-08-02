@@ -2,7 +2,6 @@ import * as React from 'react';
 
 import About from '../components/content/About';
 import Border from '../components/content/Border';
-import ButtonRow from '../components/content/ButtonRow';
 import Calendar from '../components/content/Calendar';
 import Contact from '../components/form/Contact';
 
@@ -12,7 +11,7 @@ import ScheduleContent from '../markdown/schedule.md';
 
 export default () => {
   return (
-    <div className="fadein" style={{marginTop: '-64px'}}>
+    <div className="fadein">
     <About color='blue'>
       <ScheduleContent />
       <Calendar 
@@ -134,13 +133,6 @@ export default () => {
           }
         ]}
       />
-      <ButtonRow buttons={[
-        {
-          link: 'export',
-          logo: 'fas fa-download',
-          title: 'Export to your calendar',
-        }
-      ]}/>
     </About>
     <Border border={border3} />
     <About color='red' border={border3}>

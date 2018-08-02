@@ -3,8 +3,11 @@ import styled from 'styled-components';
 export const StyledWrapper = styled.div`
     width: 100%;
     display: grid;
+    display: -ms-grid;
     grid-template-rows: 48px repeat(28, minmax(8px,min-content));
+    -ms-grid-rows: 48px repeat(28, minmax(8px,min-content));
     grid-gap: 4px;
+    -ms-grid-gap: 4px;
     font-family: 'Fjalla One', sans-serif;
     margin-top: 64px;
 `

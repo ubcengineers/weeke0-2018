@@ -6,7 +6,9 @@ export const StyledWrapper = styled.div`
     width: 100%;
     background: #2F2F6F;
     display: grid;
+    display: -ms-grid;
     grid-template-columns: auto 1fr auto;
+    -ms-grid-columns: auto 1fr auto;
     grid-template-rows: 64px;
 `
 

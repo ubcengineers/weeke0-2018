@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Scrollbars from 'react-custom-scrollbars';
 import * as Loadable from 'react-loadable';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Nav from './components/content/Nav';
 
@@ -22,6 +22,8 @@ const LoadablePage = (component: any) => Loadable({
 
 const MainLoadable = LoadablePage(import('./pages/Main'));
 const ScheduleLoadable = LoadablePage(import('./pages/Schedule'));
+const ERetreatLoadable = LoadablePage(import('./pages/ERetreat'));
+const ErrorLoadable = LoadablePage(import('./pages/404'));
 
 export default class App extends React.Component {
 
@@ -31,7 +33,7 @@ export default class App extends React.Component {
   }
 
   public handleScroll = (value: any) => {
-    const { scrollTop } = value.srcElement;
+    const { scrollTop } = value.currentTarget;
 
     this.setState({
       top: scrollTop === 0,
@@ -55,9 +57,17 @@ export default class App extends React.Component {
                   link: '/schedule',
                   title: 'Schedule',
                 },
+                {
+                  link: '/e-retreat',
+                  title: 'E-Retreat',
+                },
             ]}/>
-            <Route path='/' exact={true} component={this.Main} />
-            <Route path='/schedule' exact={true} component={this.Schedule} />
+            <Switch>
+              <Route path='/' exact={true} component={this.Main} />
+              <Route path='/schedule' exact={true} component={this.Schedule} />
+              <Route path='/e-retreat' exact={true} component={this.ERetreat} />
+              <Route component={this.Error} />
+            </Switch>
           </div>
       </BrowserRouter>
     );
@@ -78,6 +88,24 @@ export default class App extends React.Component {
           style={{height: 'calc(100vh - 64px)', width: '100vw'}}
     >
       <ScheduleLoadable />
+    </Scrollbars>
+  );
+
+  private ERetreat = () => (
+    <Scrollbars
+          onScroll={this.handleScroll}
+          style={{height: 'calc(100vh - 64px)', width: '100vw'}}
+    >
+      <ERetreatLoadable />
+    </Scrollbars>
+  );
+
+  private Error = () => (
+    <Scrollbars
+          onScroll={this.handleScroll}
+          style={{height: 'calc(100vh - 64px)', width: '100vw'}}
+    >
+      <ErrorLoadable />
     </Scrollbars>
   );
 }

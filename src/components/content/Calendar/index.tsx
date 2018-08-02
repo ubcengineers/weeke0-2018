@@ -51,7 +51,7 @@ export default class Calendar extends React.Component<IProps> {
                     <>
                     {!element.muted ? 
                         <StyledEvent 
-                            key={element.title} 
+                            key={element.title.toString()} 
                             style={{gridRowStart: element.start * 2 - 14, gridRowEnd: element.end * 2 - 14, gridColumnStart: element.day}}
                         >
                             <StyledSubtitle>
@@ -62,7 +62,7 @@ export default class Calendar extends React.Component<IProps> {
                             </StyledTitle>
                         </StyledEvent>
                         :
-                        <StyledMuted key={element.title} style={{gridRowStart: element.start * 2 - 14, gridRowEnd: element.end * 2 - 14, gridColumnStart: element.day}}>
+                        <StyledMuted key={element.title.toString()} style={{gridRowStart: element.start * 2 - 14, gridRowEnd: element.end * 2 - 14, gridColumnStart: element.day}}>
                             <StyledSubtitle>
                                 {element.subtitle}
                             </StyledSubtitle>

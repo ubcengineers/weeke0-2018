@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
     width: 100%;
-    height: 50vw;
-    max-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 4vw;
 `
 
 export const StyledLogo = styled.img`
