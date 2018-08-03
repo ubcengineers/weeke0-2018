@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import About from '../components/content/About';
 import Border from '../components/content/Border';
+import ButtonRow from '../components/content/ButtonRow';
+import Focus from '../components/content/Focus';
 import PictureGrid from '../components/content/PictureGrid';
 import Contact from '../components/form/Contact';
 
@@ -21,12 +23,35 @@ export default () => {
             <Border border={border1} />
             <About color='white' border={border1}>
                 <ERetreatContent />
+                <Focus items={[
+                    {
+                        subtitle: 'WHEN',
+                        title: 'Sept 14th - Sept 16th',
+                    },
+                    {
+                        subtitle: 'WHERE',
+                        title: 'Camp Latona, Gambier Island',
+                    },
+                    {
+                        subtitle: 'HOW MUCH',
+                        title: '$110 per person, all included',
+                    },
+                ]}/>
                 <PictureGrid images={[
                     picture7,
                     picture8,
                     picture9,
                     picture10,
                 ]} />
+                <ButtonRow 
+                    buttons={[
+                        {
+                        link: '#',
+                        logo: 'fas fa-ticket-alt',
+                        title: 'Tickets available August 15th',
+                        },
+                    ]}
+                />
             </About>
             <Border border={border3} color='white'/>
             <About color='red' border={border3}>
