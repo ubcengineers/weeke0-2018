@@ -10,6 +10,7 @@ export const StyledWrapper = styled.div`
     grid-template-columns: auto 1fr auto;
     -ms-grid-columns: auto 1fr auto;
     grid-template-rows: 64px;
+    transition: all .4s;
 `
 
 export const StyledNavItem = styled(NavLink)`
