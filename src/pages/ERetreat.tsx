@@ -48,7 +48,7 @@ export default () => {
                         {
                         link: '#',
                         logo: 'fas fa-ticket-alt',
-                        title: 'Tickets available August 15th',
+                        title: 'Tickets available Aug 15th',
                         },
                     ]}
                 />
