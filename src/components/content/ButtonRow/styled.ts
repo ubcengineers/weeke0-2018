@@ -17,7 +17,7 @@ export const StyledButtonCard = styled.div`
     border-radius: 16px;
     box-shadow: rgba(0,0,0,0.4) 0 0 16px;
     overflow: hidden;
-    font-size: 1.8em;
+    font-size: 1.4em;
     white-space: nowrap;
     text-align: center;
     font-family: 'Fjalla One', sans-serif;

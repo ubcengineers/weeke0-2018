@@ -12,6 +12,7 @@ export default (props: IProps) => {
                 background: `url(${props.border}) no-repeat`,
                 backgroundSize: '100% 100%',
                 height: '10vw',
+                margin: '-1px 0',
                 width: '100%',
             }} />
         </div>
