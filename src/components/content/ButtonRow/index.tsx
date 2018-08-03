@@ -14,7 +14,7 @@ export default (props: IProps) => {
         <StyledWrapper>
             {props.buttons.map((element) => (
                 <>
-                {element.link.substr(0, 4) === 'http' ?
+                {element.link.substr(0, 4) === 'http' || element.link.substr(0, 7) === '/static'?
                     <StyledLinkA key={element.title} href={element.link}>
                         <StyledButtonCard>
                             <StyledIcon className={element.logo} />

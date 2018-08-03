@@ -2,12 +2,15 @@ import * as React from 'react';
 
 import About from '../components/content/About';
 import Border from '../components/content/Border';
+import ButtonRow from '../components/content/ButtonRow';
 import Calendar from '../components/content/Calendar';
 import Contact from '../components/form/Contact';
 
 import border3 from '../assets/border3.svg';
 
 import ScheduleContent from '../markdown/schedule.md';
+
+import cal from '../assets/Week_E0.ics';
 
 export default () => {
   return (
@@ -130,6 +133,15 @@ export default () => {
             start: 21,
             subtitle: '7pm',
             title: 'Back to School Party',
+          }
+        ]}
+      />
+      <ButtonRow
+        buttons={[
+          {
+            link: cal,
+            logo: 'fas fa-download',
+            title:'Download to your calendar',
           }
         ]}
       />
