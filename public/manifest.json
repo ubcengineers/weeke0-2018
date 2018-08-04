@@ -1,0 +1,15 @@
+{
+  "short_name": "Week E^0",
+  "name": "Week E^0 2018",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#2f2f6f",
+  "background_color": "#ffffff"
+}

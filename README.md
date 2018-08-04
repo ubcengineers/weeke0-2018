@@ -1,7 +1,7 @@
 # Week E^0 2018 Website
 
 
-This is the repository of the Week E^0 2018 website. This website provides information Week E^0 and E-Retreat for incoming students and potential volunteers. The website uses the static website generator [Gatsby.js](https://www.gatsbyjs.org/), which takes advantage of React to render the various webpage components.
+This is the repository of the Week E^0 2018 website. This website provides information Week E^0 and E-Retreat for incoming students and potential volunteers. The website uses the static website generator [Create React App](https://github.com/facebook/create-react-app).
 
 [View live website](https://weeke0.ubcengineers.ca)
 
@@ -9,13 +9,6 @@ This is the repository of the Week E^0 2018 website. This website provides infor
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing. See deployment for notes on how to deploy to a live machine.
 
-### Prerequisites
-
-You will need Gatsby.js installed on your local machine before proceeding. You can install Gatsby by running the following:
-
-```
-npm install --global gatsby-cli
-```
 
 ### Installing
 
@@ -27,17 +20,18 @@ cd weeke0-2018
 npm install
 ```
 
-You can then start a development server by running ```npm run develop```
+You can then start a development server by running `yarn start`
 
 ### Deployment
 
-I recommend reading Gatsby's [great documentation](https://www.gatsbyjs.org/docs/deploy-gatsby/) on this matter as they explain it better than I ever could.
+Run `yarn build` and deploy the build folder on your prefered static website publisher.
 
 ## Built with
 
-* [Gatsby.js](https://www.gatsbyjs.org/)
+* [Create React App](https://github.com/facebook/create-react-app)
 * [React](https://reactjs.org/)
 * [styled-components](https://github.com/styled-components/styled-components)
+* [Netlify](https://www.netlify.com)
 
 ## Authors
 

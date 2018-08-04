@@ -1,0 +1,2 @@
+# Schedule
+Between all the BBQ, meet and greets and, more importantly, your first classes at university, your first week at UBC will definitely be hectic! Make sure to keep this page handy to stay organized and attend all the fun events we have prepared for you. 

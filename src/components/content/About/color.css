@@ -1,0 +1,26 @@
+.white {
+    background: white;
+    color: black;
+}
+
+.white h1, .white h2, .white h3 {
+    color: #E51E25;
+}
+
+.blue {
+    color: white;
+    background: radial-gradient(#2f2f6f 40%, transparent 100%);
+}
+
+.blue h1, .blue h2, .blue h3 {
+    color: white;
+}
+
+.red {
+    color: white;
+    background: #E51E25;
+}
+
+.red h1, .blue h2, .blue h3 {
+    color: white;
+}
