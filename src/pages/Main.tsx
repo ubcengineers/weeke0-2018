@@ -52,7 +52,12 @@ export default () => {
           link: 'e-retreat',
           logo: 'fas fa-info',
           title: 'More Info',
-        }
+        },
+        {
+          link: 'https://www.showpass.com/eus-e-retreat-2018/',
+          logo: 'fas fa-ticket-alt',
+          title: 'Get your ticket',
+        },
       ]}/>
     </About>
     <Border border={border1} />

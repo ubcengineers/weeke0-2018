@@ -23,11 +23,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1993202399@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1083913391@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180904T090000
 DTEND;TZID="America/Los_Angeles":20180904T160000
 SUMMARY:Imagine Day
+DESCRIPTION:Imagine Day
 LOCATION:UBC
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -36,12 +37,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-576841850@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-2072130697@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180904T160000
 DTEND;TZID="America/Los_Angeles":20180904T190000
 SUMMARY:Imagine Day BBQ
-DESCRIPTION:One of our biggest events during Week E0--a huge barbecue at EOSC Field to welcome you on the first day of school!  Come check it out for free burgers (veggie included)\, play some Ultimate Frisbee\, get some Engineering swag at Red Sales\, and meet tons of new people!
+DESCRIPTION:Imagine Day BBQ
 LOCATION:EOSC Field
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -50,12 +51,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1308999623@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1242300592@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180904T170000
 DTEND;TZID="America/Los_Angeles":20180904T190000
 SUMMARY:Scavenger Hunt
-DESCRIPTION:Taking place right after the Imagine Day BBQ\, this is a photo/video/object scavenger hunt for anyone wanting to team up with some new friends and win some sweet prizes! Stick around at the BBQ\, and we’ll be handing out lists of items\, tasks\, and places to find\, prizes given to the funniest/best group photo.
+DESCRIPTION:Scavenger Hunt
 LOCATION:EOSC Field
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -64,12 +65,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1200107374@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1869344608@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180905T080000
 DTEND;TZID="America/Los_Angeles":20180905T100000
 SUMMARY:AOESPD Breakfast
-DESCRIPTION:A free breakfast run by the Engineering Fraternity and Sorority at UBC\, come check them out!  Alpha Omega Epsilon (AOE) is the sorority\, Sigma Phi Delta (SPD) is the fraternity.
+DESCRIPTION:AOESPD Breakfast
 LOCATION:Kaiser Atrium
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -78,12 +79,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1305786404@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-226629985@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180905T120000
 DTEND;TZID="America/Los_Angeles":20180905T140000
 SUMMARY:Chariot Racing
-DESCRIPTION:Chariot Racing is one of our proud traditions\, and is one of our official competitions during E-Week.  Each engineering department races in their own skillfully engineered wagon\, and conquers goofy challenges along the way. Come try one of these chariots out\, race your friends in a time trial for prizes\, enjoy some more (MORE??) free food\, and\, more importantly\, win bragging rights.
+DESCRIPTION:Chariot Racing
 LOCATION:Main Mall\, near the Engineering Cairn
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -92,12 +93,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-141214625@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1147259324@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180905T173000
 DTEND;TZID="America/Los_Angeles":20180905T210000
 SUMMARY:Games Night with Profs
-DESCRIPTION:We know UBC is a big school\, and it can sometimes feel intimidating to meet and get to know your professors\, but almost every student who’s gotten to know any of their profs has said it’s worth it!  Come to meet some of the profs in your courses in a chill games night\, and learn that there’s nothing to be afraid of.
+DESCRIPTION:Games Night with Profs
 LOCATION:Engineering Student Centre
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -106,12 +107,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-722652483@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1174403657@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180906T080000
 DTEND;TZID="America/Los_Angeles":20180906T100000
 SUMMARY:ESW Breakfast
-DESCRIPTION:This breakfast is run by Engineers for a Sustainable World\, an engineering organization (and club at UBC) focused on finding sustainable solutions to engineering problems.  If going green is your thing\, come check them out here!
+DESCRIPTION:ESW Breakfast
 LOCATION:Kaiser Atrium
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -120,12 +121,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1153427238@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-2093061019@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180906T110000
 DTEND;TZID="America/Los_Angeles":20180906T123000
 SUMMARY:True Engineer
-DESCRIPTION:A true engineer can fulfill any design requirements they’re given (no matter how goofy) with whatever materials they’re given (no matter how silly).  Switch out the free burgers for free pizza\, and take part in a creative team-based design competition with some fun prizes!
+DESCRIPTION:True Engineer
 LOCATION:Engineering Student Centre
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -134,12 +135,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1769619214@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1090479910@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180906T160000
 DTEND;TZID="America/Los_Angeles":20180906T170000
 SUMMARY:E-Retreat 101
-DESCRIPTION:Want a chance to get some quality time with your fellow first years\, explore west-coast beauty\, and have one last wicked weekend before school ramps up?  Come to this info session and learn about E-Retreat: a trip out to Camp Latona on Gambier Island during the second weekend of school. Bond with new friends\, hear stories from the older students (volunteers at E-Retreat)\, and learn more about how to get involved within Engineering.
+DESCRIPTION:E-Retreat 101
 LOCATION:Engineering Student Centre
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -148,12 +149,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-550373193@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1628879331@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180906T170000
 DTEND;TZID="America/Los_Angeles":20180906T190000
 SUMMARY:hEUStory & Godiva Band BBQ
-DESCRIPTION:The UBC Engineers of past and present are known for pulling tremendous stunts.  Swing by the ESC to hear about some of the famous pranks that may or may not be associated with UBC Engineering as well as to get a taste of some of our wacky traditions.  In the theme of history\, the Godiva Band (our engineering marching band) will be performing and we will be giving out more free food!
+DESCRIPTION:hEUStory & Godiva Band BBQ
 LOCATION:Engineering Student Centre
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -162,12 +163,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-373324100@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-696872149@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180907T080000
 DTEND;TZID="America/Los_Angeles":20180907T100000
 SUMMARY:EWB Breakfast
-DESCRIPTION:Grab some free pancakes with Engineers Without Borders\, a humanitarian group of engineering students!  Feel free to ask them about all the good work they do\, and decide if you want to get involved.
+DESCRIPTION:EWB Breakfast
 LOCATION:Kaiser Atrium
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -176,12 +177,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1252166271@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1361961933@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180907T110000
 DTEND;TZID="America/Los_Angeles":20180907T130000
 SUMMARY:Ultimate Frisbee & BBQ
-DESCRIPTION:Get ready to start living the Vancouver lifestyle and join us for some Ultimate Frisbee!  Beginners and experts alike are welcome\, and at the very least you can come down and enjoy the free BBQ!
+DESCRIPTION:Ultimate Frisbee & BBQ
 LOCATION:Forestry Field
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -190,26 +191,25 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1314161003@marudot.com
-DTSTART;TZID="America/Los_Angeles":20180907T190000
-DTEND;TZID="America/Los_Angeles":20180908T000000
-SUMMARY:Back-to-School Party - 19+
-DESCRIPTION:Although not technically part of E^0\, this is a welcome back party at the ESC for upper years\, transfer students\, and mature first years. Guaranteed to be a ton of fun!
-LOCATION:Engineering Student Centre
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-132518112@marudot.com
+DTSTART;TZID="America/Los_Angeles":20180907T130000
+DTEND;TZID="America/Los_Angeles":20180908T140000
+SUMMARY:WiE Event
+LOCATION:Engineering Student Centre Courtyard
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Back-to-School Party - 19+
+DESCRIPTION:WiE Event
 TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-372846406@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-486601077@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180911T110000
 DTEND;TZID="America/Los_Angeles":20180911T130000
 SUMMARY:Engineering Department Club BBQ
-DESCRIPTION:One of the best Week E0 events that you can go to help make the most of your university experience! We definitely recommend showing up to this. Meet upper year students in the engineering department(s) you’re interested in\, gain some valuable friends and connections\, and get a head start on figuring out your university career.
+DESCRIPTION:Engineering Department Club BBQ
 LOCATION:Engineering Design Centre Courtyard
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -218,12 +218,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-272443641@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-217635687@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180912T170000
 DTEND;TZID="America/Los_Angeles":20180912T180000
 SUMMARY:E-Retreat Info Session
-DESCRIPTION:This session is mandatory for anyone going on E-Retreat\, so if you’ve signed up already or are thinking of going\, make sure to come to this!
+DESCRIPTION:E-Retreat Info Session
 LOCATION:Engineering Student Centre
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -232,12 +232,12 @@ TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180803T191714Z
-UID:20180803T191714Z-1776535474@marudot.com
+DTSTAMP:20180813T002547Z
+UID:20180813T002547Z-1935369371@marudot.com
 DTSTART;TZID="America/Los_Angeles":20180914T160000
 DTEND;TZID="America/Los_Angeles":20180914T180000
 SUMMARY:PrE-Retreat BBQ
-DESCRIPTION:If you’re going on E-Retreat\, you’ll want to show up to this\, and preferably on time! Get one last BBQ into your stomach\, meet all the people that you’ll be spending the weekend with\, and be there for any last minute logistics before the busses pick us up.
+DESCRIPTION:PrE-Retreat BBQ
 LOCATION:Engineering Student Centre
 BEGIN:VALARM
 ACTION:DISPLAY

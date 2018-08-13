@@ -46,9 +46,9 @@ export default () => {
                 <ButtonRow 
                     buttons={[
                         {
-                        link: '#',
+                        link: 'https://www.showpass.com/eus-e-retreat-2018/',
                         logo: 'fas fa-ticket-alt',
-                        title: 'Tickets available Aug 15th',
+                        title: 'Get your ticket',
                         },
                     ]}
                 />

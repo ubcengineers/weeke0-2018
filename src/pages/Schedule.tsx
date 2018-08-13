@@ -22,19 +22,19 @@ export default () => {
         days={[
           <>
             Monday<br/>
-            Sept 4th
+            Sept 3rd
           </>,
           <>
             Tuesday<br/>
-            Sept 5th
+            Sept 4th
           </>,
           <>
             Wednesday<br/>
-            Sept 6th
+            Sept 5th
           </>,
           <>
             Thursday<br/>
-            Sept 7th
+            Sept 6th
           </>,
           <>
             Friday<br/>
@@ -129,10 +129,10 @@ export default () => {
           },
           {
             day: 5,
-            end: 19,
-            start: 21,
-            subtitle: '7pm',
-            title: 'Back to School Party',
+            end: 13,
+            start: 14,
+            subtitle: '1pm - 2pm',
+            title: 'WiE event',
           }
         ]}
       />
