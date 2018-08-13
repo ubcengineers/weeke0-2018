@@ -38,7 +38,7 @@ export default () => {
           </>,
           <>
             Friday<br/>
-            Sept 8th
+            Sept 7th
           </>,
         ]}
         events={[
