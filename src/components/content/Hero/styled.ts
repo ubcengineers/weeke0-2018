@@ -12,7 +12,8 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 60vw;
+  width: 55vw;
+  min-width: 350px;
   background: radial-gradient(white 50%, transparent 100%);
   margin-left: 5vw;
 `;

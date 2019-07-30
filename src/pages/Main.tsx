@@ -24,7 +24,7 @@ import ERetreatContent from "../markdown/e-retreat.md";
 export default () => {
   return (
     <div className="fadein">
-      <Hero logo={logo} subtitle="September 4 - 12" />
+      <Hero logo={logo} subtitle="September 3rd - 15th" />
       <About color="white">
         <AboutContent />
         <YouTube src="https://www.youtube.com/embed/U0NT7_L5my4?controls=0&modestbranding=1&rel=0&showinfo=0" />
@@ -52,11 +52,6 @@ export default () => {
               link: "e-retreat",
               logo: "fas fa-info",
               title: "More Info"
-            },
-            {
-              link: "https://www.showpass.com/eus-e-retreat-2018/",
-              logo: "fas fa-ticket-alt",
-              title: "Get your ticket"
             }
           ]}
         />

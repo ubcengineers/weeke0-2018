@@ -1,8 +1,29 @@
-## There's more!
+### WIE Campus Tours
+**Time: Monday, September 9, 11AM - 12PM**  
+**Place: Kaiser Atrium**  
+Women in Engineering is hosting Campus tours for all new incoming students who wish to find their way around campus. Learn about the 100 years of UBC engineering campus history.
 
-### Engineering Department Club BBQ
+### Department BBQ
+**Time: Tuesday, September 10, 11AM - 1PM**  
+**Place: Engineering Student Centre Courtyard**  
+Even more BBQ?? Our second week is bringing you another glorious free barbecue where you can learn all about the UBC Engineering Departments!
 
-**Time:** Tuesday Sept. 11, 11:00 AM - 1:00 PM{{<br/>}}
-**Location:** Engineering Design Centre Courtyard
+### ESW Green Games
+**Time: Tuesday, September 10, 5PM - 7PM**  
+**Place: Engineering Student Centre**  
+Get to know some of the important engineering buildings while solving puzzles and gaining prizes! Visit all 5 stations and get a mega-prize. 
 
-One of the best Week E0 events that you can go to help make the most of your university experience! We definitely recommend showing up to this. Meet upper year students in the engineering department(s) you’re interested in, gain some valuable friends and connections, and get a head start on figuring out your university career.
+### ESW Sustain Your Brain
+**Time: Wednesday, September 11, 11AM - 12PM**  
+**Place: Engineering Student Centre**  
+How much do you "really" know about sustainability? Test yourself among friends! Everyone gets something, but only one can win the grand prize. 
+
+### E-Retreat Info Session
+**Time: Thursday, September 12, 5PM - 6PM**  
+**Place: Engineering Student Centre**  
+Are you ready for the best weekend of first year? You’ve got your tickets, now it’s time to learn everything you’ll need to know in order to have the time of your life! 
+
+### WIE Breakfast for Dinner
+**Time: Thursday, September 12, 6PM - 8:00PM**  
+**Place: Engineering Student Centre**  
+Women in Engineering (WiE) is welcoming you with their classic Breakfast for Dinner socials! Meet the WiE team and learn about all the cool things WiE is up to this year over pancakes! Or come for the pancakes!

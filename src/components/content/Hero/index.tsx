@@ -12,8 +12,8 @@ export default (props: IProps) => {
     <StyledWrapper
       id="home"
       style={{
-        height: props.size === "full" ? "calc(100vh - 64px)" : "60vw",
-        maxHeight: props.size === "full" ? "" : "56vh"
+        height: props.size === "full" ? "calc(100vh - 64px)" : "70vw",
+        maxHeight: props.size === "full" ? "" : "70vh"
       }}
     >
       {props.logo && <StyledLogo src={props.logo} />}

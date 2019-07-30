@@ -2,7 +2,6 @@ import * as React from "react";
 
 import About from "../components/content/About";
 import Border from "../components/content/Border";
-import ButtonRow from "../components/content/ButtonRow";
 import Focus from "../components/content/Focus";
 import PictureGrid from "../components/content/PictureGrid";
 import Contact from "../components/form/Contact";
@@ -38,15 +37,6 @@ export default () => {
           ]}
         />
         <PictureGrid images={[picture7, picture8, picture9, picture10]} />
-        <ButtonRow
-          buttons={[
-            {
-              link: "https://www.showpass.com/eus-e-retreat-2018/",
-              logo: "fas fa-ticket-alt",
-              title: "Get your ticket"
-            }
-          ]}
-        />
       </About>
       <Border border={border3} color="white" />
       <About color="red">

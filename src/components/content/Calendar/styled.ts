@@ -9,7 +9,6 @@ export const StyledWrapper = styled.div`
   grid-gap: 4px;
   -ms-grid-gap: 4px;
   font-family: "Roboto", sans-serif;
-  margin-top: 64px;
 `;
 
 export const StyledModal = styled.div`
@@ -36,7 +35,7 @@ export const StyledModalBackground = styled.div`
 
 export const StyledDay = styled.div`
   font-size: 1em;
-  color: white;
+  color: #333;
   text-align: center;
   text-transform: uppercase;
 `;
