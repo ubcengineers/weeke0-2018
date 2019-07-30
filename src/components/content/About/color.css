@@ -1,26 +1,32 @@
 .white {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
-.white h1, .white h2, .white h3 {
-    color: #E51E25;
+.white h1,
+.white h2,
+.white h3 {
+  color: #e51e25;
 }
 
 .blue {
-    color: white;
-    background: radial-gradient(#2f2f6f 40%, transparent 100%);
+  color: #333333;
+  background: radial-gradient(white 40%, transparent 100%);
 }
 
-.blue h1, .blue h2, .blue h3 {
-    color: white;
+.blue h1,
+.blue h2,
+.blue h3 {
+  color: #40ab3d;
 }
 
 .red {
-    color: white;
-    background: #E51E25;
+  color: white;
+  background: #e51e25;
 }
 
-.red h1, .blue h2, .blue h3 {
-    color: white;
+.red h1,
+.blue h2,
+.blue h3 {
+  color: white;
 }

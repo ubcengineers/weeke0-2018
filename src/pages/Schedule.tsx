@@ -6,7 +6,6 @@ import ButtonRow from '../components/content/ButtonRow';
 import Calendar from '../components/content/Calendar';
 import Contact from '../components/form/Contact';
 
-import border1 from '../assets/border1.svg';
 import border3 from '../assets/border3.svg';
 
 import ScheduleContent from '../markdown/schedule.md';
@@ -148,12 +147,11 @@ export default () => {
         ]}
       />
     </About>
-    <Border border={border1} />
     <About color='white'>
       <Week2Content />
     </About>
     <Border border={border3} color='white'/>
-    <About color='red' border={border3}>
+    <About color='red'>
       <Contact />
     </About>
     </div>
