@@ -24,7 +24,7 @@ export default () => {
           items={[
             {
               subtitle: "WHEN",
-              title: "September 13 at 5PM to September 15 at 4:30 PM"
+              title: "September 13 at 5PM to September 15 at 4:30PM"
             },
             {
               subtitle: "WHERE",

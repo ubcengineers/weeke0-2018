@@ -4,6 +4,7 @@ import About from "../components/content/About";
 import Border from "../components/content/Border";
 import Calendar from "../components/content/Calendar";
 import Contact from "../components/form/Contact";
+import ButtonRow from "../components/content/ButtonRow";
 
 import border3 from "../assets/border3.svg";
 
@@ -16,6 +17,16 @@ export default () => {
     <div className="fadein">
       <About color="blue">
         <ScheduleContent />
+        <ButtonRow
+          buttons={[
+            {
+              link:
+                "https://calendar.google.com/calendar?cid=ODcxM3NlZXA0OGp0b29udmg5bGY0OHBrcmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+              logo: "fas fa-calendar",
+              title: "Download Calendar"
+            }
+          ]}
+        />
         <h2>Week 1</h2>
         <Calendar
           title="Week 1"
@@ -57,17 +68,24 @@ export default () => {
             },
             {
               day: 2,
-              end: 16,
+              end: 16.5,
               start: 9,
-              subtitle: "9am - 4pm",
+              subtitle: "9am - 4:30pm",
               title: "Imagine Day"
             },
             {
               day: 2,
               end: 19,
-              start: 16,
-              subtitle: "4pm - 7pm",
+              start: 16.5,
+              subtitle: "4:30pm - 7pm",
               title: "Imagine Day BBQ"
+            },
+            {
+              day: 3,
+              end: 8,
+              start: 10,
+              subtitle: "8am - 10am",
+              title: "AOESPD Pancake Breakfast"
             },
             {
               day: 3,
@@ -92,6 +110,13 @@ export default () => {
             },
             {
               day: 4,
+              end: 10,
+              start: 8,
+              subtitle: "8am - 10am",
+              title: "ESW Pancake Breakfast"
+            },
+            {
+              day: 4,
               end: 13,
               start: 11,
               subtitle: "11am - 1pm",
@@ -103,6 +128,13 @@ export default () => {
               start: 17,
               subtitle: "5pm - 8pm",
               title: "hEUStory: A Centennium Celebration"
+            },
+            {
+              day: 5,
+              end: 10,
+              start: 8,
+              subtitle: "8am - 10am",
+              title: "EWB Pancake Breakfast"
             },
             {
               day: 5,
