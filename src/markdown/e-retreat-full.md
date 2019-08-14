@@ -16,7 +16,5 @@ The traditional hike!
 
 **ARE YOU EXCITED?** Don’t worry, we know you are. We have a limited amount of spots available, so be sure to get your tickets ASAP!
 
-A link to buy tickets will be up August 14th. A limited number of early bird tickets will be up for grabs first. Beat the rush!
-
 
 
