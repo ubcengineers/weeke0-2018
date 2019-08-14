@@ -14,6 +14,7 @@ import picture10 from "../assets/pictures/10.jpg";
 import picture7 from "../assets/pictures/7.jpg";
 import picture8 from "../assets/pictures/8.jpg";
 import picture9 from "../assets/pictures/9.jpg";
+import ButtonRow from "src/components/content/ButtonRow";
 
 export default () => {
   return (
@@ -33,6 +34,15 @@ export default () => {
             {
               subtitle: "HOW MUCH",
               title: "$110 per person, all included"
+            }
+          ]}
+        />
+        <ButtonRow
+          buttons={[
+            {
+              title: "Buy your ticket",
+              link: "https://www.showpass.com/eus-e-retreat-2019/",
+              logo: "fas fa-ticket-alt"
             }
           ]}
         />

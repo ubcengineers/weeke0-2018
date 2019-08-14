@@ -52,6 +52,11 @@ export default () => {
               link: "e-retreat",
               logo: "fas fa-info",
               title: "More Info"
+            },
+            {
+              title: "Buy your ticket",
+              link: "https://www.showpass.com/eus-e-retreat-2019/",
+              logo: "fas fa-ticket-alt"
             }
           ]}
         />
